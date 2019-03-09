@@ -13,7 +13,10 @@ namespace NLogInDotnetCoreConlose
 
         public void DoAction(string name)
         {
-            _logger.LogDebug(20, "Doing hard work! {Action}", name);
+            
+            _logger.LogDebug("Doing hard work! {Action}", name);
+            _logger.LogInformation("Doing hard work! {Action}", name);
+            _logger.LogError("working error! {Action}", name);
         }
 
 
